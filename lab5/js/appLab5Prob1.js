@@ -1,7 +1,10 @@
-"use strict";
-const strArry =[1,2,3,4,5];
-function sum(strArry){
-    const sum =strArry[i];
-    const a = sum.filter(sum>20);
-}
-return a;
+const numbers =[5,10,15,20,25];
+
+const greater = numbers.reduce(sum,0);
+
+function sum(accumulator, value){
+    return accumulator+value>20;
+};
+
+
+console.log(greater);

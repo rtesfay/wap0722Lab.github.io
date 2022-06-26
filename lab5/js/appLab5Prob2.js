@@ -1,8 +1,9 @@
-"use strict";
-const a=strArry(1, "john", 4);
-function getNewArry(a){
-    const arr=a.filter((a.length>5)&&(a.length===5));
-    const result= newArray().includes(arr);
+const str=['John', 'Allen', 'Elsa', 'Aregawi', 'Bob'];
+
+const getNewArray= str.filter(greaterLength);
+
+function greaterLength(length, index, array){
+    return array[index].length>5;
 }
-console.log(result);
-return result;
+
+console.log(getNewArray);
